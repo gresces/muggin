@@ -1,0 +1,17 @@
+<div class="container d-flex justify-content-md-between p-2" id="nav-div">
+    <h3 class="d-flex align-items-center mb-0 text-decoration-none">
+        <!-- {{ print " > " .Title }} -->
+        {{ .Title }}
+    </h3>
+    <ul class="nav nav-pills" >
+        {{ range .Site.Menus.main }}
+        <li class="nav-item">
+            <a href="{{ .URL }}" class="nav-link btn btn-light" role="button">
+            {{ $text := print .Name | safeHTML }}
+            {{ $text }}
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+<hr class="border-3">

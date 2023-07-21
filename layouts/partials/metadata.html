@@ -1,0 +1,16 @@
+{{ $dataTime := .PublishDate.Format "2006-01-02" }}
+{{ $dataFormat := .Site.Params.dateFormat | default "2006-01-02" }}
+
+<div class="d-flex align-items-center mt-3">
+    <time datetime="{{ $dataTime }}" class="me-5">
+        {{ .PublishDate.Format $dataFormat }}
+    </time>
+    
+    {{ with .Params.tags }}
+        {{ range . }}
+            {{ $herf := print (absURL "tags/") (urlize .) }}
+            <a href="{{ $herf }}" class="btn btn-light" role="button">{{ . }}
+            </a>
+        {{ end }}
+    {{ end }}
+</div>

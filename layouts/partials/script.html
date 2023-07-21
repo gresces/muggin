@@ -1,0 +1,7 @@
+<script src="/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+{{ if .Params.katex }}
+    {{ partial "katex.html" . }}
+{{ end }}

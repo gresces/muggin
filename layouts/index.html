@@ -1,0 +1,21 @@
+{{ define "main" }}
+<!-- <div id="home" class="container p-5 text-center">
+    <h1 class="title text-center">{{ .Site.Title }}</h1>
+</div> -->
+{{ range .Site.RegularPages.ByPublishDate.Reverse}}
+<div class="border border-3 border-secondary">
+  <h1 class="post-title">
+    <a href="{{ .Permalink }}" class="text-success fs-2">
+      {{ .Title }}
+    </a>
+  </h1>
+  <time datetime="{{ .PublishDate.Format " 2006-01-02" }}" class="me-5">
+    {{ .PublishDate.Format "2006-01-02" }}
+  </time>
+
+  {{ .Description }}
+</div>
+
+<hr>
+{{ end }}
+{{ end }}

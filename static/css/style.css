@@ -1,0 +1,27 @@
+.container {
+    max-width: 900px !important;
+    background-color: #ffffff;
+}
+
+#content.container {
+    border: solid #303030 1px;
+    margin-top: 10px;
+}
+
+body {
+    /* background-image: url(/images/background.png); */
+    background-color: #c0c0c0 !important;
+}
+
+a {
+    text-decoration: none !important;
+    text-decoration-color: lavender !important;
+}
+
+hr {
+    size: 2px;
+}
+
+.wrap-outer {
+    margin-left: calc(100vw - 100%);
+}

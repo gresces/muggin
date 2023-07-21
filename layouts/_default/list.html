@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ partial "katex.html" . }}
+<h1>{{ .Title }}</h1>
+{{ range .Pages.ByPublishDate.Reverse}}
+<div class="border p-2 border-3 border-secondary">
+    <h3>
+        <a href="{{ .RelPermalink }}" class="title">{{ .Title }}</a>
+    </h3>
+    {{ partial "metadata.html" . }}
+    <a href="{{ .RelPermalink }}" class="summary">
+        <!-- <p>{{ .Summary }}</p> -->
+        <p>{{  .Summary | safeHTML | truncate 30 }}</p>
+    </a>
+</div>
+<hr>
+{{ end }}
+{{ end }}
