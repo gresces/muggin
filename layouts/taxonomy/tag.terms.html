@@ -1,0 +1,21 @@
+{{ define "main"}}
+<h3>分类标签有{{ len .Data.Terms }}个</h3>
+
+{{ $data := .Data }}
+{{ range .Data.Terms.ByCount }}
+{{ $termLink := printf "/%s/%s/" $data.Plural .Term | urlize }}
+<h2>
+    <a href="{{ $termLink }}">{{ .Term }}</a>
+    {{ .Count }}
+</h2>
+<ul>
+    {{ range .Pages | first 5 }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+    {{ if gt (len .Pages) 5 }}
+    <li><a href="{{ $termLink }}">……</a></li>
+    {{ end }}
+</ul>
+{{ end }}
+
+{{ end }}
