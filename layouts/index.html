@@ -2,7 +2,8 @@
 <!-- <div id="home" class="container p-5 text-center">
     <h1 class="title text-center">{{ .Site.Title }}</h1>
 </div> -->
-{{ range .Site.RegularPages.ByPublishDate.Reverse}}
+{{ with .Site.GetPage "/posts" }}
+{{ range .Pages.ByPublishDate.Reverse}}
 <div class="border border-3 border-secondary">
   <h1 class="post-title">
     <a href="{{ .Permalink }}" class="text-success fs-2">
@@ -17,5 +18,7 @@
 </div>
 
 <hr>
+{{ end }}
+<p class="text-center fw-light "><a href="https://beian.miit.gov.cn/" class="text-decoration-none">晋ICP备2023017451号</a></p>
 {{ end }}
 {{ end }}
