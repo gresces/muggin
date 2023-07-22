@@ -2,14 +2,16 @@
 {{ $dataFormat := .Site.Params.dateFormat | default "2006-01-02" }}
 
 <div class="d-flex align-items-center mt-3">
-    <time datetime="{{ $dataTime }}" class="me-5">
+    <time datetime="{{ $dataTime }}" class="me-5" style="color: #aaa;">
         {{ .PublishDate.Format $dataFormat }}
     </time>
     
+    <span class="me-5" style="color: #aaa;">Words: {{.WordCount}} </span>
+
     {{ with .Params.tags }}
         {{ range . }}
             {{ $herf := print (absURL "tags/") (urlize .) }}
-            <a href="{{ $herf }}" class="btn btn-light" role="button">{{ . }}
+            <a href="{{ $herf }}" class="btn btn-light me-2" role="button" style="color: #aaa;">{{ . }}
             </a>
         {{ end }}
     {{ end }}
