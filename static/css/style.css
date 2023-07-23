@@ -1,12 +1,3 @@
-@font-face {
-    font-family: Georgia, -apple-system, 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
-}
-
-@font-face {
-    font-family: font-family: 'Josefin Sans', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
-    src: url();
-}
-
 .container {
     max-width: 900px !important;
     background-color: #ffffff;
@@ -71,7 +62,7 @@ h1,h2,h3,h4{
 }
 
 #single-main {
-    font-family: Helvetica, Tahoma, Arial, 'Noto Serif SC', '新宋体', '宋体', 'SimSun', Georgia, -apple-system, 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif !important;
+    font-family: "Source Serif Pro", Georgia, Times New Roman, Arial, 'Noto Serif SC', '新宋体', '宋体', 'SimSun', Georgia, -apple-system, 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif !important;
     font-size: 1.15rem;
     font-weight: normal;
 }
