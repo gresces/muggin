@@ -4,7 +4,7 @@
 </div> -->
 {{ with .Site.GetPage "/posts" }}
 {{ range .Pages.ByPublishDate.Reverse}}
-<div class="border border-3 border-secondary">
+<div class="">
   <h1 class="post-title">
     <a href="{{ .Permalink }}" class="text-success fs-2">
       {{ .Title }}

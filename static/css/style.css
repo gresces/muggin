@@ -15,7 +15,6 @@ body {
 
 a {
     text-decoration: none !important;
-    text-decoration-color: lavender !important;
 }
 
 hr {
@@ -70,6 +69,14 @@ h1,h2,h3,h4{
 #single-main p {
     margin: 25px 0;
     line-height: 1.8;
+}
+
+#single-main p a {
+    color: #8594e6 !important;
+}
+
+#single-main a:hover {
+    text-decoration: underline !important;
 }
 
 #single-main :not(pre)>code {
