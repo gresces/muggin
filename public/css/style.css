@@ -1,0 +1,114 @@
+.container {
+    max-width: 900px !important;
+    background-color: #ffffff;
+}
+
+#content.container {
+    border: solid #303030 1px;
+    margin-top: 10px;
+}
+
+body {
+    /* background-image: url(/images/background.png); */
+    background-color: #c0c0c0 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+hr {
+    size: 2px;
+}
+/* Body stays in middle */
+.wrap-outer {
+    margin-left: calc(100vw - 100%);
+}
+
+/* .toc-container {
+    position: absolute;
+    height: 100%;
+    left: calc((var(--toc-width) + var(--gap)) * -.92);
+    top: calc(var(--gap) * 1);
+    width: var(--toc-width);
+} */
+
+#TableOfContents {
+    border: 2px;
+    border-color: blue;
+    border-style: dashed;
+}
+
+#TableOfContents ul {
+    margin-bottom: 0;
+}
+
+/* Markdown Rendering */
+#single-main h1,
+h2 {
+    text-align: center;
+    margin-bottom: 1em !important;
+    margin-top: 2em !important;
+}
+
+h1,
+h2{
+    font-weight: bold !important;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Josefin Sans', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif !important;
+}
+
+#single-main {
+    font-family: "Source Serif Pro", Georgia, Times New Roman, Arial, 'Noto Serif SC', '新宋体', '宋体', 'SimSun', Georgia, -apple-system, 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif !important;
+    font-size: 1.15rem;
+    font-weight: normal;
+}
+
+#single-main p {
+    margin: 25px 0;
+    line-height: 1.8;
+}
+
+#single-main p a {
+    color: #8594e6 !important;
+}
+
+#single-main a:hover {
+    text-decoration: underline !important;
+}
+
+#single-main :not(pre)>code {
+    background-color: #f0f3f3;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.08em;
+}
+
+pre {
+    background-color: #f0f3f3;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+}
+
+.highlight>pre {
+    padding: 10px;
+    /* 适当留出边距 */
+    overflow: auto;
+    /* 代码行太长向右滚动 */
+}
+
+.highlight {
+    /* 统一行高，让行号和代码能对齐 */
+    line-height: 18px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
