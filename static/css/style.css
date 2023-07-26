@@ -48,7 +48,7 @@ hr {
 h2 {
     text-align: center;
     margin-bottom: 1em !important;
-    margin-top: 2em !important;
+    /* margin-top: em !important; */
 }
 
 h1,

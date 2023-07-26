@@ -2,7 +2,9 @@
 <div id="single-main" class="container">
 {{ partial "metadata.html" . }}
 <hr>
-{{ .TableOfContents }}
+{{ if .Params.toc }}
+    {{ .TableOfContents }}
+{{ end }}
 <br>
 {{ .Content }}
 </div>
