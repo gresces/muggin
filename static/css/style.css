@@ -112,3 +112,24 @@ img {
     margin-right: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+table{
+    border-collapse: collapse;
+    width: 80%;                /*设置宽度为100%*/
+    margin: 10px auto;             /*设置上下边距为10px*/
+    border-top: #303030 solid 3px;
+    border-bottom: #303030 solid 3px;
+}
+
+td,th{
+    /* border: 1px solid #ccc;     设置边框 */
+    /* 设置内边距为8px */
+    padding: 6px;
+}
+th{
+    background-color: #f2f2f2;  /*设置表头背景色*/
+    border-bottom: #303030 solid 1.5px !important;
+}
+tr:hover{
+    background-color: #e2e2e2;  /*鼠标悬停时的背景色*/
+}
