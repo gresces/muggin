@@ -9,7 +9,7 @@
     {{ partial "metadata.html" . }}
     <a href="{{ .RelPermalink }}" class="summary">
         <!-- <p>{{ .Summary }}</p> -->
-        <p>{{  .Summary | safeHTML | truncate 30 }}</p>
+        <p>{{  .Summary | safeHTML | truncate 70 }}</p>
     </a>
 </div>
 <hr>
